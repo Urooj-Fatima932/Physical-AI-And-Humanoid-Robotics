@@ -1,55 +1,56 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+# Physical AI & Humanoid Robotics Textbook (Hackathon I) Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### Technical Integrity
+All code must be validated, runnable, and adhere to ROS 2 Humble/Ubuntu 22.04 LTS.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### Hardware-First Context
+Content must explicitly integrate or reference NVIDIA Jetson Orin and Intel RealSense D435i/D455 constraints.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### Educational Rigor
+Every primary document must feature clear Learning Objectives and Knowledge Checks/Review sections.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### Docusaurus-Native
+All output must be formatted for Docusaurus compatibility and use its specific components.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+## Key Standards
 
-### [PRINCIPLE_6_NAME]
+### Terminology
+Enforce strict use of ISO-standard robotics terminology (e.g., Actuator, Kinematics, VSLAM).
 
+### Formatting
+Mandate Docusaurus Admonitions (:::tip, :::warning) and Code Tabs for language/version variations.
 
-[PRINCIPLE__DESCRIPTION]
+### Code Blocks
+All ROS commands must use `bash` highlighting; all Python code must use `python` highlighting.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+### Structure
+Document hierarchy is strictly limited to three heading levels (##, ###, ####) for clean sidebar navigation.
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+## Constraints
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+### Anti-Goals
+No use or reference to deprecated ROS 1 packages.
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+### Ethics/Safety
+Every module must dedicate a section to the ethical or safety implications of the AI system being built.
+
+### VLA Mandate
+Module 4 content must explicitly cover Vision-Language-Action (VLA) integration with LLMs for high-level planning.
+
+## Success Criteria
+
+### Content Functional
+All code snippets and configurations must be functional on the target hardware (passing a spot-check).
+
+### Formatting Validated
+The content must compile successfully via `npm run build` with no Docusaurus formatting errors.
+
+### Specification Approved
+The four module specifications generated in the next step must adhere to this Constitution and be formally approved.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
+Constitution supersedes all other practices; Amendments require documentation, approval, migration plan.
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
-
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-12-07 | **Last Amended**: 2025-12-07
